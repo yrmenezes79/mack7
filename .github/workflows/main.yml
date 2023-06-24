@@ -8,12 +8,3 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
         
-deploy-dev:
-    runs-on: ubuntu-latest
-    environment: 
-      name: dev
-      url: 'yuri.com'
-    needs: build
-    steps:
-      - name: Run a one-line script
-        run: echo Deploy Dev
